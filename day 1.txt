@@ -1,0 +1,109 @@
+UI based framework
+MVC arch.
+libary and framework
+
+this is completely client based application.
+
+which runs in client's browser.
+
+to interact with server for the data here JWT will be used .
+
+angular-cli : angular command line interface.
+
+they have a written a nodejs package which will help us to create angular project / to create some interanl parts of your project.
+
+angular-cli
+
+create a project
+create a service
+create a component
+create a module.
+etc.
+
+1. we need to install a angular cli package.
+
+npm i -g @angular/cli
+(will install latest angular version)
+
+npm i -g @angular/cli@X
+npm i -g @angular/cli@7
+(it will install version 7 with latest update.
+
+npm i -g @angular/cli@7.0.3
+(it will install major version 7 minor version 3)
+
+
+
+
+ng new client
+ng : angular cli
+new : new project creation
+client : project name 
+we typed y for routing
+we selected css for formatting html part
+use cd to go inside the angular project
+for ex. cd client
+
+ng serve (command used to start the angular application)
+
+MEAN stack based 
+Mongodb db 
+Express writing rest apis
+Angular used to develop UI
+Node is used as a platform .
+
+we will keep our server and client together (in a single folder).
+
+mostly client is your UI based application.
+
+devtool server(angular part)
+ng serve( it will start your devtool server & run the appln . ) when we will say it is going to start
+devtool server means when we will do any change into our aplin then immediately it will be rendered over the UI.
+
+module.ts its a module . it wil hold meta data about the module.  list of components, list of other modules which are used in our application, it will hold list of services.
+etc.
+app module(root module application).
+
+
+
+core module 
+dashboard module : /dashboard
+profile module  : /profile
+posts module : /posts 
+admin module
+
+how to create a module 
+
+ng g m modulename --routing
+
+ng : angular command
+g : generate
+m : module
+modulename : name
+--routing : used to create routing for components
+
+
+
+components : 
+
+types of components : 
+
+1. smart component
+
+it means usage of services(a common business logic , REST API call).
+
+2. dump component  : more dumb components , bcoz of reusbality.
+
+how to create a component : 
+
+1. inside the app module 
+ng g c componentname 
+
+2. in other modules (except app module)
+ng g c module/componentname 
+ng : angular 
+g : generate
+c : component
+module : module name 
+componentname : name 
+
